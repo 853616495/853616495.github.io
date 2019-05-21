@@ -3,8 +3,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>狗东西喜欢猫南北</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
     <!--<meta itemprop="image" content="./images/fenxiang.png" />-->
     <style>
         html {
@@ -92,8 +92,19 @@
             width: 100%;
             font-weight: bold;
         }
-    </style>
 
+        .text-suprise {
+            position: fixed;
+            bottom: 104px;
+            text-align: left;
+            width: 100%;
+            font-weight: bold;
+            margin-left: 30px;
+            color: #fffdfdee;
+        }
+    </style>
+    <script src="index.js"></script>
+    <script src="http://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -102,10 +113,20 @@
     <img src="http://raw.githubusercontent.com/WIN233/WIN233.github.io/master/jiajing.jpg" id="logo">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
-<p class="text" style="color: #ed3073;">
+<p class="text" style="color: #ed3073;" id="timeText">
     我们在一起
     <br/>
     <span id="span_dt_dt"></span>
+</p>
+<p class="text-suprise" id="supriseText" style="display: none;">
+    同学，恭喜你喜提彩蛋，这里是来自狗东西对猫南北的表白。
+    <br/>
+    总有些惊奇的际遇，比如我遇到你。
+    <br/>
+    第一次对一个人如此心动，佳静同学，我喜欢你，想和你做无期的情侣。
+    <br/>
+    希望你给我个机会，让我可以追你。
+    
 </p>
 <script language="javascript">
 	console.log("同学，恭喜你喜提彩蛋，这里是来自狗东西对猫南北的表白。");
@@ -670,10 +691,37 @@
         };
     }());
     S.init();
-</script>
 
-<audio autoplay="autoplay" loop="loop">
-    <source src="http://1drv.ws/u/s!As7iqCwemysU0w9v6IXMBbocXSTd" type="audio/mpeg">
+    var count = 1;
+    document.getElementById("logo").onclick = function(){
+        count ++ ;
+        if(count > 5) {
+            count = 0;
+            // alert("Surprise");
+            // document.getElementById("supriseText").style="display:block;";
+            $("#supriseText").fadeIn(5000);
+            document.getElementById("music1").pause();
+            document.getElementById("music2").play();
+        }
+        
+    }
+</script>
+<!-- 你是我最愚蠢的一次浪漫 -->
+<audio autoplay="autoplay" loop="loop" preload id="music1">
+    <source src="http://1drv.ws/u/s!As7iqCwemysU0w9v6IXMBbocXSTd" type="audio/mpeg">   
 </audio>
+<!-- 范玮琪-如果的事 -->
+<audio id="music2">
+    <source src="https://1drv.ws/u/s!As7iqCwemysU1WqdbjflpKzQB29n" preload type="audio/mpeg">
+</audio>
+<script>
+    window.addEventListener('devtoolschange', event => {
+		if(event.detail.isOpen) {
+            alert("同行？？？？");
+            document.getElementById("music1").pause();
+            document.getElementById("music2").play();
+        }
+	});
+</script>
 </body>
 </html>
