@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>憨憨喜欢茜茜</title>
+    <title>西高新最大的根</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
     <!--<meta itemprop="image" content="./images/fenxiang.png" />-->
@@ -10,7 +10,6 @@
         html {
             height: 100%;
         }
-
         body {
             font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
             background: #79a8ae;
@@ -20,11 +19,9 @@
             letter-spacing: 1.2px;
             margin: 0;
         }
-
         a {
             color: #ebf7f4;
         }
-
         .body--ready {
             background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
             background: -moz-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
@@ -32,23 +29,20 @@
             background: -ms-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
             background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
         }
-
         .text {
             position: fixed;
             bottom: 100px;
             text-align: center;
             width: 100%;
         }
-
         .canvas {
             margin: 0 auto;
             display: block;
         }
-
         img#logo {
-            width: 160px;
+            width: 220px;
             background-size: cover;
-            border-radius: 200px;
+            border-radius: 20px;
             box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.5);
             /* border: 3px solid #00a0ff; */
             opacity: 1;
@@ -57,18 +51,16 @@
             margin-bottom: 20px;
             transition: all 1.0s;
         }
-
         #logo:hover {
             box-shadow: 0 0 10px #fff;
             -webkit-box-shadow: 0 0 19px #fff;
             transform: rotate(360deg);
             -ms-transform: rotate(360deg); /* IE 9 */
             -moz-transform: rotate(360deg); /* Firefox */
-            -webkit-transform: rotate(360deg); /* Safari 和 Chrome */
+            -webkit-transform: rotate(360deg); /* Safari �� Chrome */
             -o-transform: rotate(360deg); /* Opera */
             filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
         }
-
         .cs {
             width: 100%;
             height: 100%;
@@ -76,7 +68,6 @@
             position: absolute;
             text-align: center;
         }
-
         .text {
             position: fixed;
             bottom: 80px;
@@ -84,7 +75,6 @@
             width: 100%;
             font-weight: bold;
         }
-
         .text-right {
             position: fixed;
             bottom: 50px;
@@ -92,7 +82,6 @@
             width: 100%;
             font-weight: bold;
         }
-
         .text-suprise {
             position: fixed;
             bottom: 104px;
@@ -108,30 +97,35 @@
 </head>
 
 <body>
-<!--更改为你女朋友的头像-->
+<!--����Ϊ��Ů���ѵ�ͷ��-->
 <div class="cs">
-    <img src="http://tva1.sinaimg.cn/large/0060lm7Tly1g3sttc2j98j30u00yotzu.jpg" id="logo">
+    
+    <img src="https://assets.meixinyiliao.com/meixin/docs/00rFIDdoQbS1uGD1U5jDQw.jpg" id="logo"> 
+    <img src="https://assets.meixinyiliao.com/meixin/docs/P9DcMV_pSgqdgAaj2KdHBQ.jpg" id="logo">、
+    <img src="https://assets.meixinyiliao.com/meixin/docs/MgvLmAX4ScyZkaQKa_7GQw.jpg" id="logo">
+    <img src="https://assets.meixinyiliao.com/meixin/docs/sOm6lfJIS4Slg455h6OMJQ.jpg" id="logo">
+    <img src="https://assets.meixinyiliao.com/meixin/docs/I9s8ZLrgTPWUFnP4DsN7aw.jpg" id="logo">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: white;" id="timeText">
-    <br/>
-    我们相识了
+    <br/>  
+当你看到这段话的时候,或许我已经离开这里,离开你们了，为此我深表歉意。留下几张照给大家想念，我永远活在你们心中。 
     <br/>
     <span id="span_dt_dt"></span>
 </p>
-<p class="text-suprise" id="supriseText" style="display: none;">
-    茜
+<!-- <p class="text-suprise" id="supriseText" style="display: none;">
+    ��
     <br/>    
-    茜
+    ��
     <br/>
-    最
+    ��
     <br/>
-    乖
-</p>
+    ��
+</p> -->
 <script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("4/30/2019 19:10:00");//这个日期是可以修改的
+        BirthDay = new Date("4/30/2019 19:10:00");//��������ǿ����޸ĵ�
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
         sectimeold = timeold / 1000
@@ -144,9 +138,8 @@
         e_minsold = (e_hrsold - hrsold) * 60;
         minsold = Math.floor((e_hrsold - hrsold) * 60);
         seconds = Math.floor((e_minsold - minsold) * 60);
-        span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+        // span_dt_dt.innerHTML = daysold + "请问" + hrsold + "请问" + minsold + "22" + seconds + "22";
     }
-
     show_date_time();
 </script>
 <script>
@@ -154,14 +147,12 @@
         init: function () {
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
-            S.UI.simulate("我是憨憨|遇见你之后|变成了敢敢|3|2|1|茜茜公主|与你相识|匆匆忙忙|日思夜想|遇见你真好");
+            S.UI.simulate("我叫郭晨|从小巨根|不认识谁是蔡徐坤|哈哈哈哈");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
         }
     };
-
-
     S.Drawing = (function () {
         var canvas,
             context,
@@ -174,13 +165,11 @@
                 function (callback) {
                     window.setTimeout(callback, 1000 / 60);
                 };
-
         return {
             init: function (el) {
                 canvas = document.querySelector(el);
                 context = canvas.getContext('2d');
                 this.adjustCanvas();
-
                 window.addEventListener('resize', function (e) {
                     S.Drawing.adjustCanvas();
                 });
@@ -210,8 +199,6 @@
             }
         };
     }());
-
-
     S.UI = (function () {
         var interval,
             currentAction,
@@ -219,7 +206,6 @@
             maxShapeSize = 30,
             sequence = [],
             cmd = '#';
-
         function formatTime(date) 
         {
             var h = date.getHours(),
@@ -231,46 +217,38 @@
         function getValue(value) {
             return value && value.split(' ')[1];
         }
-
         function getAction(value) {
             value = value && value.split(' ')[0];
             return value && value[0] === cmd && value.substring(1);
         }
-
         function timedAction(fn, delay, max, reverse) {
             clearInterval(interval);
             currentAction = reverse ? max : 1;
             fn(currentAction);
-
             if (!max || (!reverse && currentAction < max) || (reverse && currentAction > 0)) {
                 interval = setInterval(function () {
                     currentAction = reverse ? currentAction - 1 : currentAction + 1;
                     fn(currentAction);
-
                     if ((!reverse && max && currentAction === max) || (reverse && currentAction === 0)) {
                         clearInterval(interval);
                     }
                 }, delay);
             }
         }
-
         function performAction(value) {
             var action,
                 value,
                 current;
-
             sequence = typeof (value) === 'object' ? value : sequence.concat(value.split('|'));
             console.log(sequence)
             timedAction(function (index) {
                 current = sequence.shift();
                 action = getAction(current);
                 value = getValue(current);
-
                 switch (action) {
                     case 'countdown':
                         value = parseInt(value) || 10;
                         value = value > 0 ? value : 10;
-
                         timedAction(function (index) {
                             if (index === 0) {
                                 if (sequence.length === 0) {
@@ -283,23 +261,18 @@
                             }
                         }, 1000, value, true);
                         break;
-
                     case 'rectangle':
                         value = value && value.split('x');
                         value = (value && value.length === 2) ? value : [maxShapeSize, maxShapeSize / 2];
-
                         S.Shape.switchShape(S.ShapeBuilder.rectangle(Math.min(maxShapeSize, parseInt(value[0])), Math.min(maxShapeSize, parseInt(value[1]))));
                         break;
-
                     case 'circle':
                         value = parseInt(value) || maxShapeSize;
                         value = Math.min(value, maxShapeSize);
                         S.Shape.switchShape(S.ShapeBuilder.circle(value));
                         break;
-
                     case 'time':
                         var t = formatTime(new Date());
-
                         if (sequence.length > 0) {
                             S.Shape.switchShape(S.ShapeBuilder.letter(t));
                         } else {
@@ -312,21 +285,17 @@
                             }, 1000);
                         }
                         break;
-
                     default:
                         S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'HacPai' : current));
                 }
             }, 2000, sequence.length);
         }
-
         return {
             simulate: function (action) {
                 performAction(action);
             }
         };
     }());
-
-
     S.Point = function (args) {
         this.x = args.x;
         this.y = args.y;
@@ -334,22 +303,17 @@
         this.a = args.a;
         this.h = args.h;
     };
-
-
     S.Color = function (r, g, b, a) {
         this.r = r;
         this.g = g;
         this.b = b;
         this.a = a;
     };
-
     S.Color.prototype = {
         render: function () {
             return 'rgba(' + this.r + ',' + +this.g + ',' + this.b + ',' + this.a + ')';
         }
     };
-
-
     S.Dot = function (x, y) {
         this.p = new S.Point({
             x: x,
@@ -358,16 +322,12 @@
             a: 1,
             h: 0
         });
-
         this.e = 0.07;
         this.s = true;
-
         this.c = new S.Color(255, 255, 255, this.p.a);
-
         this.t = this.clone();
         this.q = [];
     };
-
     S.Dot.prototype = {
         clone: function () {
             return new S.Point({
@@ -388,13 +348,11 @@
                 dy = details[1],
                 d = details[2],
                 e = this.e * d;
-
             if (this.p.h === -1) {
                 this.p.x = n.x;
                 this.p.y = n.y;
                 return true;
             }
-
             if (d > 1) {
                 this.p.x -= ((dx / d) * e);
                 this.p.y -= ((dy / d) * e);
@@ -405,13 +363,11 @@
                     return true;
                 }
             }
-
             return false;
         },
         _update: function () {
             if (this._moveTowards(this.t)) {
                 var p = this.q.shift();
-
                 if (p) {
                     this.t.x = p.x || this.p.x;
                     this.t.y = p.y || this.p.y;
@@ -430,7 +386,6 @@
                     }
                 }
             }
-
             d = this.p.a - this.t.a;
             this.p.a = Math.max(0.1, this.p.a - (d * 0.05));
             d = this.p.z - this.t.z;
@@ -440,7 +395,6 @@
             var dx = this.p.x - n.x,
                 dy = this.p.y - n.y,
                 d = Math.sqrt(dx * dx + dy * dy);
-
             return details ? [dx, dy, d] : d;
         },
         move: function (p, avoidStatic) {
@@ -453,15 +407,12 @@
             this._draw();
         }
     };
-
-
     S.ShapeBuilder = (function () {
         var gap = 13,
             shapeCanvas = document.createElement('canvas'),
             shapeContext = shapeCanvas.getContext('2d'),
             fontSize = 500,
             fontFamily = 'Avenir, Helvetica Neue, Helvetica, Arial, sans-serif';
-
         function fit() {
             shapeCanvas.width = Math.floor(window.innerWidth / gap) * gap;
             shapeCanvas.height = Math.floor(window.innerHeight / gap) * gap;
@@ -469,7 +420,6 @@
             shapeContext.textBaseline = 'middle';
             shapeContext.textAlign = 'center';
         }
-
         function processCanvas() {
             var pixels = shapeContext.getImageData(0, 0, shapeCanvas.width, shapeCanvas.height).data;
             dots = [],
@@ -480,63 +430,50 @@
                 fy = shapeCanvas.height,
                 w = 0,
                 h = 0;
-
             for (var p = 0; p < pixels.length; p += (4 * gap)) {
                 if (pixels[p + 3] > 0) {
                     dots.push(new S.Point({
                         x: x,
                         y: y
                     }));
-
                     w = x > w ? x : w;
                     h = y > h ? y : h;
                     fx = x < fx ? x : fx;
                     fy = y < fy ? y : fy;
                 }
-
                 x += gap;
-
                 if (x >= shapeCanvas.width) {
                     x = 0;
                     y += gap;
                     p += gap * 4 * shapeCanvas.width;
                 }
             }
-
             return {dots: dots, w: w + fx, h: h + fy};
         }
-
         function setFontSize(s) {
             shapeContext.font = 'bold ' + s + 'px ' + fontFamily;
         }
-
         function isNumber(n) {
             return !isNaN(parseFloat(n)) && isFinite(n);
         }
-
         function init() {
             fit();
             window.addEventListener('resize', fit);
         }
-
         // Init
         init();
-
         return {
             imageFile: function (url, callback) {
                 var image = new Image(),
                     a = S.Drawing.getArea();
-
                 image.onload = function () {
                     shapeContext.clearRect(0, 0, shapeCanvas.width, shapeCanvas.height);
                     shapeContext.drawImage(this, 0, 0, a.h * 0.6, a.h * 0.6);
                     callback(processCanvas());
                 };
-
                 image.onerror = function () {
                     callback(S.ShapeBuilder.letter('What?'));
                 };
-
                 image.src = url;
             },
             circle: function (d) {
@@ -546,28 +483,23 @@
                 shapeContext.arc(r * gap, r * gap, r * gap, 0, 2 * Math.PI, false);
                 shapeContext.fill();
                 shapeContext.closePath();
-
                 return processCanvas();
             },
             letter: function (l) {
                 var s = 0;
-
                 setFontSize(fontSize);
                 s = Math.min(fontSize,
                     (shapeCanvas.width / shapeContext.measureText(l).width) * 0.8 * fontSize,
                     (shapeCanvas.height / fontSize) * (isNumber(l) ? 1 : 0.45) * fontSize);
                 setFontSize(s);
-
                 shapeContext.clearRect(0, 0, shapeCanvas.width, shapeCanvas.height);
                 shapeContext.fillText(l, shapeCanvas.width / 2, shapeCanvas.height / 2);
-
                 return processCanvas();
             },
             rectangle: function (w, h) {
                 var dots = [],
                     width = gap * w,
                     height = gap * h;
-
                 for (var y = 0; y < height; y += gap) {
                     for (var x = 0; x < width; x += gap) {
                         dots.push(new S.Point({
@@ -576,31 +508,24 @@
                         }));
                     }
                 }
-
                 return {dots: dots, w: width, h: height};
             }
         };
     }());
-
-
     S.Shape = (function () {
         var dots = [],
             width = 0,
             height = 0,
             cx = 0,
             cy = 0;
-
         function compensate() {
             var a = S.Drawing.getArea();
-
             cx = a.w / 2 - width / 2;
             cy = a.h / 2 - height / 2;
         }
-
         return {
             shuffleIdle: function () {
                 var a = S.Drawing.getArea();
-
                 for (var d = 0; d < dots.length; d++) {
                     if (!dots[d].s) {
                         dots[d].move({
@@ -613,26 +538,20 @@
             switchShape: function (n, fast) {
                 var size,
                     a = S.Drawing.getArea();
-
                 width = n.w;
                 height = n.h;
-
                 compensate();
-
                 if (n.dots.length > dots.length) {
                     size = n.dots.length - dots.length;
                     for (var d = 1; d <= size; d++) {
                         dots.push(new S.Dot(a.w / 2, a.h / 2));
                     }
                 }
-
                 var d = 0,
                     i = 0;
-
                 while (n.dots.length > 0) {
                     i = Math.floor(Math.random() * n.dots.length);
                     dots[d].e = fast ? 0.25 : (dots[d].s ? 0.14 : 0.11);
-
                     if (dots[d].s) {
                         dots[d].move(new S.Point({
                             z: Math.random() * 20 + 10,
@@ -645,7 +564,6 @@
                             h: fast ? 18 : 30
                         }));
                     }
-
                     dots[d].s = true;
                     dots[d].move(new S.Point({
                         x: n.dots[i].x + cx,
@@ -654,11 +572,9 @@
                         z: 5,
                         h: 0
                     }));
-
                     n.dots = n.dots.slice(0, i).concat(n.dots.slice(i + 1));
                     d++;
                 }
-
                 for (var i = d; i < dots.length; i++) {
                     if (dots[i].s) {
                         dots[i].move(new S.Point({
@@ -666,7 +582,6 @@
                             a: Math.random(),
                             h: 20
                         }));
-
                         dots[i].s = false;
                         dots[i].e = 0.04;
                         dots[i].move(new S.Point({
@@ -687,7 +602,6 @@
         };
     }());
     S.init();
-
     var count = 1;
     document.getElementById("logo").onclick = function(){
         count ++ ;
@@ -702,18 +616,18 @@
         
     }
 </script>
-<!-- 你是我最愚蠢的一次浪漫 -->
+<!-- ���������޴���һ������ -->
 <audio autoplay="autoplay" loop="loop" preload id="music1">
     <source src="http://fs.open.kugou.com/92f4d0eacf10e3000687855608507e2c/5cfa296a/G080/M02/1F/15/8IYBAFgum_yAXntkAE9rnAXKMlI729.mp3" type="audio/mpeg">   
 </audio>
-<!-- 范玮琪-如果的事 -->
+<!-- ������-������� -->
 <audio id="music2">
     <source src="http://fs.open.kugou.com/92f4d0eacf10e3000687855608507e2c/5cfa296a/G080/M02/1F/15/8IYBAFgum_yAXntkAE9rnAXKMlI729.mp3" preload type="audio/mpeg">
 </audio>
 <script>
     // window.addEventListener('devtoolschange', event => {
 	// 	if(event.detail.isOpen) {
-    //         alert("同行？？？？");
+    //         alert("ͬ�У�������");
     //         document.getElementById("music1").pause();
     //         document.getElementById("music2").play();
     //     }
